@@ -1,0 +1,32 @@
+﻿<Window x:Class="SqlClientWPF.SqlClientMode"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SqlClientWPF"
+        mc:Ignorable="d"
+        Title="SqlClientMode" Height="500" Width="800">
+    <Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions >
+                <RowDefinition MaxHeight="45"></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition MaxHeight="100"></RowDefinition>
+                <RowDefinition MaxHeight="45"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBox x:Name="inputRequestTextBox" TextWrapping="Wrap" AcceptsReturn="True" Height="200" VerticalScrollBarVisibility="Visible" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"/>
+            <TextBox x:Name="getResponseTextBox" TextWrapping="Wrap" AcceptsReturn="True" Height="200" VerticalScrollBarVisibility="Visible" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3"/>
+            <Button Content="Run" Grid.Row="2" Grid.Column="0" Margin="25" Background="AliceBlue" Click="Button_Click"/>
+            <Button Content="1" Grid.Row="2" Grid.Column="1" Margin="25" Background="AliceBlue"/>
+            <Button Content="1" Grid.Row="2" Grid.Column="2" Margin="25" Background="AliceBlue"/>
+            <Label Content="Sql Request" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" FontSize="18"/>
+            <Label Content="Sql Response" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="3" FontSize="18"/>
+        </Grid>
+    </Grid>
+</Window>
