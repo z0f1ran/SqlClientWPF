@@ -23,8 +23,8 @@
             <TextBox x:Name="inputRequestTextBox" TextWrapping="Wrap" AcceptsReturn="True" Height="200" VerticalScrollBarVisibility="Visible" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"/>
             <TextBox x:Name="getResponseTextBox" TextWrapping="Wrap" AcceptsReturn="True" Height="200" VerticalScrollBarVisibility="Visible" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3"/>
             <Button Content="Run" Grid.Row="2" Grid.Column="0" Margin="25" Background="AliceBlue" Click="Button_Click"/>
-            <Button Content="1" Grid.Row="2" Grid.Column="1" Margin="25" Background="AliceBlue"/>
-            <Button Content="1" Grid.Row="2" Grid.Column="2" Margin="25" Background="AliceBlue"/>
+            <Button Content="Clear" Grid.Row="2" Grid.Column="1" Margin="25" Background="AliceBlue"/>
+            <Button Content="Close" Grid.Row="2" Grid.Column="2" Margin="25" Background="AliceBlue"/>
             <Label Content="Sql Request" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" FontSize="18"/>
             <Label Content="Sql Response" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="3" FontSize="18"/>
         </Grid>

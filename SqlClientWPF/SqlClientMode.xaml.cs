@@ -24,12 +24,18 @@ namespace SqlClientWPF
         {
             InitializeComponent();
             db = new DataBaseContstoller();
-            db.SetConnectinon(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Vegetables; Integrated Security=SSPI;");
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             getResponseTextBox.Text = db.ExecuteSql(inputRequestTextBox.Text);
+        }
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (MessageBox.Show("You are sure?", "quest", MessageBoxButton.YesNo) != MessageBoxResult.Yes)
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

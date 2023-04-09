@@ -41,7 +41,10 @@ namespace SqlClientWPF
 
         private void workWithDataMode_Btn_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("not done yet");
+            WorkWithData wwd = new WorkWithData();
+            this.Visibility = Visibility.Hidden;
+            wwd.ShowDialog();
+            this.Visibility = Visibility.Visible;
         }
 
         private void exit_Btn_Click(object sender, RoutedEventArgs e)

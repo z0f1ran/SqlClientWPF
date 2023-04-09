@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Net.Http.Headers;
@@ -18,10 +19,9 @@ namespace SqlClientWPF
         }
         public DataBaseContstoller()
         {
-            ConnectionString = null;
         }
 
-        private string ConnectionString { get; set; }
+        private string ConnectionString = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
         public string ExecuteSql(string query)
         {
             SqlConnection connection = null;
